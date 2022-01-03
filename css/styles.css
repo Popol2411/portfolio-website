@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #357b70;
+  --primary-color: #4F70B2;
   --secondary-color: #e0b354;
   --font-weight: 700;
-  --color-visited: #05676e;
+  --color-visited: #CDCDCD;
   --color-active: #489c79;
+  --p-fontsize: 24px;
 }
 
 a {
@@ -13,12 +14,11 @@ a {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.6;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: var(--font-weight);
 }
 
@@ -32,8 +32,8 @@ h3 {
   font-weight: var(--font-weight);
 }
 
-a:visited {
-  color: var(--color-visited);
+p {
+  font-size: var(--p-fontsize);
 }
 
 a:hover, a:focus {
@@ -74,19 +74,38 @@ opacity: 0.8;
 }
 
 .navigation-list__item--active {
+  display: flex;
+  justify-content: space-around;
   text-decoration: none;
+  background-color: white;
+  color: #489c79;
+  padding: 10px 20px;
+  border: solid 1px white;
+}
+
+.navigation-list__item {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: solid 1px white;
 }
 
 .profile__portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
+  width: 350px;
+  border-radius: 15%;
+  margin: 50px;
 }
 
 .profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   max-width: 700px;
   margin: 0 auto;
+  line-height: 3.0;
 }
 
 * {
@@ -98,16 +117,21 @@ opacity: 0.8;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 10px;
 }
 
 .page-header {
   display: flex;
+  justify-content: space-around;
   width: 100%;
-  padding: 20px;
+  background-color: var(--primary-color);
+  margin-bottom: 10px;
+  padding: 0 20px;
 }
 
 .page-header img {
     align-self: center;
+    border-radius: 50%
 }
 
 .page-header__item {
@@ -121,6 +145,10 @@ opacity: 0.8;
 
 .navigation-list {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .navigation-list li {
@@ -138,18 +166,12 @@ opacity: 0.8;
 }
 .grid__item {
   display: inline-block;
-  width: 33%;
-  background-color: lightgray;
+  background-color: #D8E0FD;
   width: auto;
   min-height: auto;
   margin: 10px;
+  padding: 10px;
 }
-
-/* .grid__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
-} */
-
 
 .social-media a {
       text-decoration: none
@@ -256,6 +278,19 @@ width: 150px;
 .work h1 {
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+
+.grid h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .skills {
