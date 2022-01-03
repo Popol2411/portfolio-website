@@ -78,6 +78,7 @@ opacity: 0.8;
   justify-content: space-around;
   text-decoration: none;
   background-color: white;
+  font-weight: bold;
   color: #489c79;
   padding: 10px 20px;
   border: solid 1px white;
@@ -90,12 +91,19 @@ opacity: 0.8;
   color: white;
   padding: 10px 20px;
   border: solid 1px white;
+  transition: background 500ms ease-in;
+}
+
+.navigation-list__item:hover,
+.navigation-list__item:focus {
+  background: lightblue;
 }
 
 .profile__portrait {
   width: 350px;
   border-radius: 15%;
   margin: 50px;
+  padding: 0 5px;
 }
 
 .profile {
@@ -106,6 +114,7 @@ opacity: 0.8;
   max-width: 700px;
   margin: 0 auto;
   line-height: 3.0;
+  padding: 0 5px;
 }
 
 * {
@@ -171,6 +180,7 @@ opacity: 0.8;
   min-height: auto;
   margin: 10px;
   padding: 10px;
+  border-radius: 10%;
 }
 
 .social-media a {
@@ -205,6 +215,7 @@ display: flex;
 flex-direction: column;
 text-align: center;
 width: 100%;
+padding: 0 5px;
 }
 
 .contact {
@@ -299,4 +310,8 @@ width: 300px;
 margin: auto;
 display: inline;
 justify-content: center;
+}
+
+#submit-button {
+margin-bottom: 20px;
 }
