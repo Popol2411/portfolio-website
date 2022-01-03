@@ -63,9 +63,14 @@ cursor: pointer;
 opacity: 0.8;
 }
 
+.button_primary {
+  margin: 10px;
+}
+
 .button__secondary {
   background-color: var(--secondary-color);
   color: white;
+  margin: 10px;
 }
 
 .navigation-list__item--active {
@@ -123,11 +128,6 @@ opacity: 0.8;
   margin-left: 15px;
 }
 
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
-
 @supports (display: grid) {
   .grid {
   display: grid;
@@ -137,10 +137,12 @@ opacity: 0.8;
   }
 }
 .grid__item {
+  display: inline-block;
+  width: 33%;
   background-color: lightgray;
   width: auto;
   min-height: auto;
-  margin: 0;
+  margin: 10px;
 }
 
 /* .grid__item:last-child {
